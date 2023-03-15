@@ -7,8 +7,15 @@ fun main(){
     println(arrNames(arrayOf("Ndemo", "Veronica", "Hopper Lab", "AkiraChix", "Vee")))
     }
 //Create a function that prints out all the odd numbers between 1 and 100 (2pts)
-fun oddNums(){
-    println(List(100){Random.nextInt(0, 100)})
+fun oddNums() :Int{
+    var numbers = 0
+    for (num in 1..100) {
+        if (num % 2 != 0) {
+            println(num)
+//            println(numbers{.Random.nextInt(0, 100) })
+        }
+    }
+    return numbers
 }
 
 //Takes in arrays of names and retirns the number of names longer than 5 chars
